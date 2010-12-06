@@ -17,28 +17,41 @@ where container is a canvas element.
 
 Fills the screen with the background color
 
+***
+
     c.arc(x, y, radius, start, end)
 
 Draws an arc. Origin is at (x, y) with the specified radius. Start and end
 are radians specifying the degrees at which the arc begins and ends.
+
+***
 
     c.ellipse(x, y, radius, start, end)
 
 Draws an ellipse. The top-left corner is at (x, y), and the ellipse has the
 specified width and height.
 
+***
+
     c.line(x1, y1, x2, y2)
 
 Draws a line from (x1, y1) to (x2, y2).
+
+***
 
     c.rectangle(x, y, width, height)
 
 Draws a rectangle. Its top-left corner is at (x, y), and the rectangle has
 the specified width and height.
+
+***
+
     c.polygon(points...)
 
 Draws a polygon given the vararg list of points. There must be an even
 number of arguments.
+
+***
 
     c.bezier(points...)
 
@@ -55,6 +68,8 @@ Would draw two bezier curves. The first would start at (0, 0) and end at
 second bezier curve would start at (100, 100) and end at (200, 200). It
 would have control points at (80, 60) and (70, 90).
 
+***
+
     c.quadratic(points...)
 
 Draws one or more quadratic curves given the vararg list of points. The
@@ -67,6 +82,8 @@ specifies the end point for that part of the curve. For example:
 Would draw two quadratic curves. The first would start at (0, 0) and end at
 (100, 100), with a control point at (30, 20). The second would start at
 (100, 100) and end at (200, 200), with a control point at (80, 60).
+
+***
 
     c.image(image, x, y, width, height, sliceX, sliceY, sliceWidth, sliceHeight)
 
@@ -99,34 +116,51 @@ width of 100 and a height of 50.
 
 Enables fill for drawn objects
 
+***
+
     c.noFill()
 
 Removes fill for drawn objects
+
+***
 
     c.fillStyle(style)
 
 Sets the fill style for drawn objects. Style is a CSS string.
 
+***
+
     c.stroke()
 
 Enables stroke for drawn objects
+
+***
 
     c.noStroke()
 
 Removes the stroke for drawn objects
 
+***
+
     c.strokeStyle(style)
 
 Sets the stroke style for drawn objects. Style is a CSS string.
+
+***
+
     c.strokeWeight(weight)
 
 Sets the stroke weight (i.e. thickness) for drawn objects. Weight is a
 number (int or float) specifying thickness.
 
+***
+
     c.fontProps(props)
 
 Sets the font properties according to the key/values passed in by the map.
 Valid values include 'font', 'textAlign', and 'textBaseline'.
+
+***
 
     c.background(style)
 
@@ -140,6 +174,8 @@ Runs a loop, redrawing the canvas at the rate specified by framerate. At
 each loop iteration, the specified callback method is called, with its
 context being this object. If the callback returns false, the loop is
 broken out of.
+
+***
 
     c.framerate(fps)
 
