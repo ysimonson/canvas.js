@@ -3,7 +3,7 @@
 This is a small library for doing graphics on <canvas> elements. It's like
 processing.js in its simple API, except there's no special language so apps
 are written directly using javascript or coffeescript. And it heavily uses
-method chaining, like jQuery.
+method chaining, like jQuery. For an example application, check out Wordman: https://github.com/ysimonson/wordman
 
 Create a new canvas like so:
 
