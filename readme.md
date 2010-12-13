@@ -150,3 +150,7 @@ broken out of.
     c.framerate(fps)
 
 Sets the framerate for redrawing when the loop in run() is active.
+
+    c.context
+
+Provides low-level access to the canvas' Context2D object
