@@ -14,7 +14,7 @@ class Canvas
     # Starts a new path at the specified (x, y) position.
     _startPath: (x, y) ->
         @context.beginPath()
-        if x is not undefined and y is not undefined then @context.moveTo x, y
+        if x != undefined and y != undefined then @context.moveTo x, y
         
     # Finishes a path. Closes the path if closePath is true (i.e. if the first
     # and last points don't touch, then it will add a line between the two
