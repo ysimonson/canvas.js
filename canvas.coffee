@@ -251,4 +251,4 @@ class Canvas
         @context[if @_doFill then 'fillText' else 'strokeText'] text, x, y, width
         this
 
-window.Canvas = Canvas
+this.Canvas = Canvas
